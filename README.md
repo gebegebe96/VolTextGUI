@@ -1,9 +1,8 @@
 # VolTextGUI
 https://gluonhq.com/products/javafx/    JAVAFX lib
 
-Include the new JDK as Installed JREs in Eclipse -> Preferences -> Java -> Installed JREs -> Add.
-
-Include in the project the jars under the lib folder from JavaFX 15.
+Create a new User Library under Eclipse -> Window -> Preferences -> Java -> Build Path -> User Libraries -> New.
+and include the jars under the lib folder from JavaFX 15.
 
 Click on Run -> Run Configurations...  -> Java Application, create a new launch configuration for your project named `hellofx` and add these VM arguments:
 
