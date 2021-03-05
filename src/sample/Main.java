@@ -168,8 +168,11 @@ public class Main extends Application {
             public void handle(ActionEvent e) {
 
                 msg("Creando il PDF", consoleTextArea, false);
-//                JOptionPane.showMessageDialog(null,"height" + primaryStage.getHeight());
-//                JOptionPane.showMessageDialog(null,"width" + primaryStage.getWidth());
+                String grammatica = userTextArea.getText();
+                
+                
+                //Some actions
+
 
             }
         });
