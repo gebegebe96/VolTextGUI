@@ -1,5 +1,139 @@
 {
-	title:"TestA5";
+	title:"TestA8_circle";
+	path:"./PageDiv/";
 	page:{
+		width:1200;
+		height:1200;
+		div:{
+			id:"A";
+			shape:"CIRCLE";
+			color:#482A4822;
+			width:50mm;
+			height:50mm;
+			pos-x:100;
+			pos-y:100;
+			position:cc;
+			fit-x:true;
+			angle-rotation:56;
+		}
+		div:{
+			id:"B";
+			position:lc;
+			color:#58184544;
+			width:50mm;
+			height:50mm;
+			pos-x:60%;
+			pos-y:60%;
+			fit-y:true;
+		}
+		div:{
+			id:"C";
+			shape:"CIRCLE";
+			color:#900C3F66;
+			width:200mm;
+			height:200mm;
+			pos-x:300pt;
+			position:rb;
+			pos-y:400pt;
+		}
+		div:{
+			id:"-A";
+			color:#C70039FF;
+			width:50mm;
+			height:50mm;
+			pos-x:-100;
+			pos-y:-100;
+			fit-y:true;
+		}
+		div:{
+			id:"-B";
+			shape:"TRIANGLE";
+			cross-point:50;
+			color:#FF5733FF;
+			width:200mm;
+			height:200mm;
+			pos-x:-60%;
+			pos-y:-60%;
+		}
+		div:{
+			id:"-C";
+			color:#FFC300FF;
+			width:50mm;
+			fit-x:true;
+			height:50mm;
+			pos-x:-300pt;
+			pos-y:-400pt;
+		}
+	}
+	page:{
+		format:A4;
+		img:{
+			URL:"./Sid.png";
+			position:lb;
+			angle-rotation:30;
+			width:30%;
+			height:30%;
+		}
+		div:{
+			position:cc;
+			color:#AA36F0FF;
+			height: 30%;
+			width: 30%;
+			angle-rotation: 90;
+			img:{
+				URL:"./Sid.png";
+				width:30%;
+				height:30%;
+			}
+			img:{
+				URL:"./Sid.png";
+				position:lc;
+				width:30%;
+				height:30%;
+				angle-rotation: 30;
+			}
+			img:{
+				URL:"./Sid.png";
+				position:ct;
+				width:30%;
+				height:30%;
+				angle-rotation: 40;
+			}
+		}
+	}
+	page:{
+		format:A4;
+		div:{
+			position:cc;
+			color:#581845FF;
+			height: 50%;
+			width: 170mm;
+			
+			
+			text:{
+				id:"TESTO2";
+				colorT:"red";
+				position:ct;
+				height:30mm;
+				string:"io non sono bello ma spaccio (solo fin quando posso)";
+				angle-rotation: 0;
+			}
+		}
+	}
+	page:{
+		format:A4;
+		text:{
+				id:"TESTO";
+				colorT:"blue";
+				position:lc;
+				string:"io non sono bello ma spaccio (solo fin quando posso)";
+				angle-rotation: 0;
+		}
+		list:{
+				id:"LISTA";
+				position:cc;
+				item:"Hola 1";
+				item:"Hola 2";
+		}
 	}
 }
