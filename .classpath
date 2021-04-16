@@ -59,5 +59,6 @@
 	<classpathentry kind="lib" path="C:/Users/stefa/Documents/VolTEXT/VolText/VolTEXT/slf4j-api-1.7.9.jar"/>
 	<classpathentry kind="lib" path="C:/Users/stefa/Documents/VolTEXT/VolText/VolTEXT/slf4j-simple-1.7.9.jar"/>
 	<classpathentry kind="lib" path="C:/Users/stefa/Documents/VolTEXT/VolText/VolTEXT/pdfbox2-layout-1.0.0.jar"/>
+	<classpathentry kind="lib" path="fontbox-2.0.22.jar"/>
 	<classpathentry kind="output" path="out/production/JAVAFX"/>
 </classpath>
