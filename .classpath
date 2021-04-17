@@ -56,7 +56,7 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/lib"/>
 	<classpathentry kind="lib" path="library_voltext.jar"/>
 	<classpathentry kind="lib" path="fontbox-2.0.22.jar"/>
-	<classpathentry kind="lib" path="pdfbox-2.0.22.jar"/>
+	<classpathentry kind="lib" path="pdfbox-2.0.22.jar" sourcepath="C:/Users/stefa/.m2/repository/org/apache/pdfbox/pdfbox/2.0.22/pdfbox-2.0.22-sources.jar"/>
 	<classpathentry kind="lib" path="pdfbox2-layout-1.0.0.jar"/>
 	<classpathentry kind="lib" path="slf4j-api-1.7.9.jar"/>
 	<classpathentry kind="lib" path="slf4j-simple-1.7.9.jar"/>

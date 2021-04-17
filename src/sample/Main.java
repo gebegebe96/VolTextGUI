@@ -3,6 +3,8 @@ package sample;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 import javax.swing.JFileChooser;
@@ -83,7 +85,7 @@ public class Main extends Application {
         consoleTextArea.setPrefSize(prefWidth, 250);
         consoleTextArea.setEditable(false);
         consoleTextArea.setStyle(" -fx-highlight-fill: lightgrey; -fx-highlight-text-fill: black; -fx-text-fill: wheat; ");
-        consoleTextArea.setText("La bella la va al fosso,ravanei remulass \n barbabietole spinass \n daghel al terun.. DAGHEL AL TERUUNNN!!");
+        consoleTextArea.setText("");
         grid.add(consoleTextArea, 1, 7);
 
         btnApri.setOnAction(new EventHandler<ActionEvent>() {
@@ -171,16 +173,19 @@ public class Main extends Application {
 
                 msg("Creando il PDF", consoleTextArea, false);
                 String grammatica = userTextArea.getText();
-
+                List<String> errors=new ArrayList<String>();
                 
-                user_gui libr_gui=new user_gui();
+                
                 try {
-					user_gui.generaPDF(grammatica);
+					errors=user_gui.generaPDF(grammatica);
 				} catch (IOException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
-                //Some actions
+                msg("",consoleTextArea,false);
+                for(String msg:errors) {
+                	msgAdd(msg, consoleTextArea);
+                }
 
 
             }
@@ -204,8 +209,12 @@ public class Main extends Application {
     }
 
 
-    public void msg(String s, TextArea a, boolean bad)
+    public void msg(String s, TextArea a,boolean bad)
     {
         a.setText(s);
+    }
+    public void msgAdd(String s, TextArea a)
+    {
+        a.appendText(s+System.lineSeparator());
     }
 }
