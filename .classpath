@@ -55,10 +55,10 @@
 	<classpathentry kind="lib" path="commons-logging-1.2.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/lib"/>
 	<classpathentry kind="lib" path="library_voltext.jar"/>
-	<classpathentry kind="lib" path="C:/Users/stefa/Documents/VolTEXT/VolText/VolTEXT/pdfbox-2.0.22.jar"/>
-	<classpathentry kind="lib" path="C:/Users/stefa/Documents/VolTEXT/VolText/VolTEXT/slf4j-api-1.7.9.jar"/>
-	<classpathentry kind="lib" path="C:/Users/stefa/Documents/VolTEXT/VolText/VolTEXT/slf4j-simple-1.7.9.jar"/>
-	<classpathentry kind="lib" path="C:/Users/stefa/Documents/VolTEXT/VolText/VolTEXT/pdfbox2-layout-1.0.0.jar"/>
 	<classpathentry kind="lib" path="fontbox-2.0.22.jar"/>
+	<classpathentry kind="lib" path="pdfbox-2.0.22.jar"/>
+	<classpathentry kind="lib" path="pdfbox2-layout-1.0.0.jar"/>
+	<classpathentry kind="lib" path="slf4j-api-1.7.9.jar"/>
+	<classpathentry kind="lib" path="slf4j-simple-1.7.9.jar"/>
 	<classpathentry kind="output" path="out/production/JAVAFX"/>
 </classpath>
